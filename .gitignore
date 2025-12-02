@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Database files (CRITICAL: Do not remove this line)
+data/db/
+*.log
+*.wt
+*.bson
+*.lock
+
+# Build / Coverage
+coverage/
+dist/
+build/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+#.md
+GEMINI.md

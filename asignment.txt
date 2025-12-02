@@ -1,0 +1,25 @@
+﻿Tracking Assignment Overview
+Build a Cargo Shipment Tracker application using the MERN stack. The app should include:
+1. Backend (Node.js, Express, MongoDB):
+○ API endpoints:
+■ /shipments (GET) – Retrieve all shipments with their details (status, route, current location, ETA, etc.).
+■ /shipment/:id (GET) – Retrieve details of a specific shipment.
+■ /shipment/:id/update-location (POST) – Update the current location of the shipment.
+■ /shipment/:id/eta (GET) – Retrieve the estimated time of arrival (ETA) based on current location and route data.
+■ /shipment (POST) – Create a new shipment using container ID and other details.
+○ Data modeling:
+■ Shipment model: Fields for shipment ID, container ID, route (array of locations), current location, current ETA, status, etc.
+2. Frontend (React, Redux):
+○ Dashboard:
+■ A tabular structure that lists all shipments, showing their ID, container ID, current location, ETA, status, and the ability to filter or sort based on shipment details.
+■ A button to add a new shipment, which will open a form where users can input the container ID and shipment details.
+○ Map integration:
+■ Display the shipment’s current location on an interactive map (use libraries like react-leaflet or google-maps-react).
+■ Show the entire route of the shipment with markers for key locations.
+■ Show current ETA and other relevant data (current location, estimated arrival, etc.).
+■ Allow the user to update the shipment location manually or through the backend (via the update-location endpoint).
+Note
+1. You should have two repositories, one for Webapp and another for the backend.
+2. The repository should have a ReadMe.md file which has the steps to run the code, define the env variables used (if, any).
+3. Feel free to make any assumptions while working on it and add them to the ReadMe.
+4. (optional) Dockerise the code.
